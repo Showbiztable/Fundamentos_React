@@ -11,6 +11,7 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro"
 import ListaAlunos from "./components/repeticao/ListaAlunos"
 import TabelaProdutos from "./components/repeticao/TabelaProdutos"
 import ParOuImpar from "./components/condicional/ParOuImpar"
+import UsuarioInfo from "./components/condicional/UsuarioInfo"
 
 const tag4 = (<div className="texto-cor-vermelho">
     <strong>JSX - JavaScript XML</strong><br />
@@ -51,6 +52,9 @@ const App = () => {
                 </Card>
                 <Card titulo="Renderização Condicional" color="#982395">
                     <ParOuImpar numero={20}/>
+                    <UsuarioInfo usuario={{nome: "Abreu"}} />
+                    <UsuarioInfo usuario={{email: "abreu@domain.com"}} />
+                    <UsuarioInfo />
                 </Card>
             </div>
         </div>
