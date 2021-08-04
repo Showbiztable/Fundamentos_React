@@ -1,0 +1,8 @@
+.Tabela-Produtos th {
+    background-color: coral;
+    color: white;
+}
+
+.Tabela-Produtos .Par {
+    background-color: #ddd;
+}
