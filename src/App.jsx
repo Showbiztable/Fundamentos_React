@@ -12,6 +12,11 @@ import ListaAlunos from "./components/repeticao/ListaAlunos"
 import TabelaProdutos from "./components/repeticao/TabelaProdutos"
 import ParOuImpar from "./components/condicional/ParOuImpar"
 import UsuarioInfo from "./components/condicional/UsuarioInfo"
+import DiretaPai from "./components/comunicacao/DiretaPai"
+import IndiretaPai from "./components/comunicacao/IndiretaPai"
+import InputFormulario from "./components/formulario/input"
+import Contador from "./components/contador/Contador"
+import Megasena from "./components/mega/Mega"
 
 const tag4 = (<div className="texto-cor-vermelho">
     <strong>JSX - JavaScript XML</strong><br />
@@ -55,6 +60,21 @@ const App = () => {
                     <UsuarioInfo usuario={{nome: "Abreu"}} />
                     <UsuarioInfo usuario={{email: "abreu@domain.com"}} />
                     <UsuarioInfo />
+                </Card>
+                <Card titulo="Comunicação Direta Pai" color="#59323C">
+                    <DiretaPai />
+                </Card>
+                <Card titulo="Comunicação Indireta Pai" color="#ffb300">
+                    <IndiretaPai />
+                </Card>
+                <Card titulo="Componente Controlado" color="#5e35b1">
+                    <InputFormulario />
+                </Card>
+                <Card titulo="Componente Contador" color="#424242">
+                    <Contador numeroInicial={10}/>
+                </Card>
+                <Card titulo="Resultado Mega-Sena" color="#4caf50">
+                    <Megasena />
                 </Card>
             </div>
         </div>
