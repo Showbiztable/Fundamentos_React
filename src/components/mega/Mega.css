@@ -1,0 +1,7 @@
+.mega-sena .numeros-sorteados {
+    border-radius: 100%;
+    font-size: 25px;
+    margin: 2px;
+    background-color: green;
+    color: white;
+}
